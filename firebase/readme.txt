@@ -1,0 +1,1 @@
+after running "npm run build" cut the build folder and paste the files in public folder

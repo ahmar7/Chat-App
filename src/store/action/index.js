@@ -46,15 +46,12 @@ const chat_users = () => {
   return (dispatch) => {
     let users = [];
     const db = getDatabase();
-    const starCountRef = ref(db, "/users");
+    const starCountRef = ref(db, "/users/");
     onValue(starCountRef, (snapshot) => {
-      const data = snapshot.val();
+      let data = snapshot.val();
 
-      snapshot.val().forEach((v) => {
-        console.log("DAT>>>>,c", v);
-      });
-      // users.push(data);
-      // dispatch({ type: "FIREBASEUSERS", payload: users });
+      users.push(Object.values(data));
+      dispatch({ type: "FIREBASEUSERS", payload: users[0] });
     });
   };
 };

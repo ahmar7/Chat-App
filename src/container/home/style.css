@@ -3,7 +3,7 @@
   src: local("cascadia code"),
     url("../../fonts/CascadiaCode.ttf") format("truetype");
 }
-body {
+ body {
   background-image: url("../../assets/images/chatbg.jpg");
   background-size: inherit;
   background-repeat: no-repeat;
@@ -40,6 +40,14 @@ body {
   transition-duration: 0.4s;
   border: 2px solid royalblue;
 }
+.fbBtn:active {
+  background: royalblue;
+  color:white;
+  transition: all;
+
+  transition-duration: 0s;
+  border: 2px solid royalblue;
+}
 .googleBtn {
   width: 370px;
   padding: 6px 0 6px 0;
@@ -56,6 +64,13 @@ body {
   color: red;
   transition: all;
   transition-duration: 0.4s;
+  border: 2px solid crimson;
+}
+.googleBtn:active {
+  background: red;
+  color:white;
+  transition: all;
+  transition-duration: 0s;
   border: 2px solid crimson;
 }
 .chatHeading {
@@ -89,12 +104,7 @@ body {
 .allbtn {
   margin-top: 50px;
 }
-.signupbtn:hover {
-  cursor: pointer;
-  background: none;
-  color: crimson;
-  transition: all 0.4s;
-}
+
 .link {
   font-size: xx-large;
   font-weight: bolder;

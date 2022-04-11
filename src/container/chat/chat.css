@@ -1,0 +1,15 @@
+.mainchat {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lists{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+justify-content: space-around ;
+}
+.user-img{
+  border-radius: 50%;
+}
